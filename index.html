@@ -1,238 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Drone World, your one-stop-shop for all thing drone-related" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Drone World, your one-stop-shop for all thing drone-related" />
     <meta name="author" content="Apurba Dutta" />
     <meta name="keywords" content="html, frontend, web development" />
-    <meta property="og:title" content="Drone World">
+    <meta property="og:title" content="Drone World" />
     <meta property="og:image" content="https://i.ibb.co/GdP2SGY/Drone.png" />
-    <meta property="og:description" content="Welcome to Drone World, your one-stop-shop for all thing drone-related">
+    <meta
+      property="og:description"
+      content="Welcome to Drone World, your one-stop-shop for all thing drone-related" />
     <title>Drone World</title>
-    <link rel="icon" type="image/x-icon" href="./favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kalam&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Kalam&display=swap"
+      rel="stylesheet" />
     <style>
-        * {
-            font-family: 'Caveat', cursive;
-            font-family: 'Kalam', cursive;
-        }
+      * {
+        font-family: "Caveat", cursive;
+        font-family: "Kalam", cursive;
+      }
 
-        th,
-        td {
-            text-align: center;
-            padding: 15px;
-        }
+      th,
+      td {
+        text-align: center;
+        padding: 15px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <img src="logo.png" alt="logo" width="80">
-            <p><strong>Drone World</strong></p>
-            <form action="#">
-                <label for="searchbox">Search: </label>
-                <input type="search" placeholder="Search for Drone" size="25" id="searchbox" name="searchbox">
-                <input type="submit" value="Go">
-            </form>
-            <ul style="list-style: none;">
-                <li> <a href="#">Home</a></li>
-                <li> <a href="#products">Product</a></li>
-                <li> <a href="#services">Services</a></li>
-                <li> <a href="#about">About</a></li>
-                <li> <a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <img src="logo.png" alt="logo" width="80" />
+        <p><strong>Drone World</strong></p>
+        <form action="#">
+          <label for="searchbox">Search: </label>
+          <input
+            type="search"
+            placeholder="Search for Drone"
+            size="25"
+            id="searchbox"
+            name="searchbox" />
+          <input type="submit" value="Go" />
+        </form>
+        <ul style="list-style: none">
+          <li><a href="#">Home</a></li>
+          <li><a href="#products">Product</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <hr>
+    <hr />
     <main>
-        <section id="productdetails">
-            <h1>Welcome to Drone World</h1>
-            <p> <strong>Explore the skies with our high-quality drones</strong></p>
-            <button><a href="#">Shop Now</a></button>
-            <figure>
-                <img src="./hero_image.jpg" alt="hero_image" width="600" height="300" />
-                <figcaption>DJI Drone Shots</figcaption>
-            </figure>
-        </section>
-        <hr>
-        <section id="products">
-            <h2>Our products</h2>
-            <p><strong>Explore our selection of high-quality RC drones</strong></p>
-            <form action="#">
-                <label for="range">Price Range:</label>
-                <input type="range" name="range" id="range" />
-            </form>
+      <section id="productdetails">
+        <h1>Welcome to Drone World</h1>
+        <p><strong>Explore the skies with our high-quality drones</strong></p>
+        <button><a href="#">Shop Now</a></button>
+        <figure>
+          <img
+            src="./hero_image.jpg"
+            alt="hero_image"
+            width="600"
+            height="300" />
+          <figcaption>DJI Drone Shots</figcaption>
+        </figure>
+      </section>
+      <hr />
+      <section id="products">
+        <h2>Our products</h2>
+        <p><strong>Explore our selection of high-quality RC drones</strong></p>
+        <form action="#">
+          <label for="range">Price Range:</label>
+          <input type="range" name="range" id="range" />
+        </form>
+        <br />
+        <ins>Available Drone:</ins>
+        <select>
+          <option value="Phantom 4 Pro" id="Phantom">Phantom 4 Pro</option>
+          <option value="Mavic Air 2" id="Mavic">Mavic Air 2</option>
+          <option value="Spark" id="Spark">Spark</option>
+          <option value="Inspire 2" id="Inspire">Inspire 2</option>
+        </select>
+        <br /><br />
+        <ul>
+          <li>
+            <mark> <strong>Phantom 4 pro</strong> </mark> <br />
+            <img
+              src="./Products/phantom.jpg"
+              alt="product"
+              width="200"
+              style="border: 2px solid black" />
             <br />
-            <ins>Available Drone:</ins>
-            <select>
-                <option value="Phantom 4 Pro" id="Phantom">Phantom 4 Pro</option>
-                <option value="Mavic Air 2" id="Mavic">Mavic Air 2</option>
-                <option value="Spark" id="Spark">Spark</option>
-                <option value="Inspire 2" id="Inspire">Inspire 2</option>
-            </select>
-            <br><br>
-            <ul>
-                <li><mark> <strong>Phantom 4 pro</strong> </mark> <br> <img src="./Products/phantom.jpg" alt="product"
-                        width="200" style="border: 2px solid black;"> <br>
-                    <strong>Price: </strong>&#8377;10,000 &emsp; &nbsp; <button><a
-                            href="https://www.amazon.com/DJI-Professional-Quadcopter-Multirotor-CP-PT-000488/dp/B01MXLLDQ8?th=1">Buy
-                            Now</a></button>
-                    <p> <strong>Description: </strong>The Phantom 4 Pro is a professional-grade drone that is perfect
-                        for capturing
-                        stunning aerial footage. <br> It features a 4K camera with a 3-axis gimbal for stable, smooth
-                        video, and advanced obstacle avoidance technology <br> to help keep your drone safe.</p>
-                </li>
-                <li> <mark><strong>Mavic Air 2</strong></mark> <br> <img src="./Products/mavic.jpg" alt="product"
-                        width="200" style="border: 2px solid black;"> <br>
-                    <strong>Price: </strong>&#8377;15,000 &emsp; &nbsp; <button><a
-                            href="https://www.amazon.com/DJI-Mavic-Air-Quadcopter-ActiveTrack/dp/B086X7QKHD?th=1">Buy
-                            Now</a></button>
-                    <p><strong>Description: </strong>The Mavic Air 2 is a compact, powerful drone that is great for both
-                        novice and
-                        experienced pilots. <br> It features a 48-megapixel camera and can fly for up to 34 minutes on a
-                        single charge.</p>
-                </li>
-                <li>
-                    <mark> <strong>Spark</strong> </mark> <br> <img src="./Products/spark.jpg" alt="product" width="200"
-                        style="border: 2px solid black;"> <br>
-                    <strong>Price: </strong>&#8377;25,000 &emsp; &nbsp; <button><a
-                            href="https://www.amazon.com/DJI-Spark-Portable-Drone-Alpine/dp/B07173X82D?th=1">Buy
-                            Now</a></button>
-                    <p> <strong> Description:</strong>The Spark is a small but mighty drone that is perfect for
-                        beginners. <br> It
-                        features a 1080p camera and can be controlled using hand gestures, making it a fun and
-                        easy-to-use option for pilots of all skill levels.</p>
-                </li>
-                <li>
-                    <mark> <strong>Inspire 2</strong> </mark> <br> <img src="./Products/inspire.jpg" alt="product"
-                        width="200" style="border: 2px solid black;"> <br>
-                    <strong>Price:</strong> &#8377;50,000 &emsp; &nbsp; <button><a
-                            href="https://www.amazon.com/DJI-CP-BX-000166-Inspire-2-Drone/dp/B01MY2YDW9">Buy
-                            Now</a></button>
-                    <p> <strong>Description:</strong>The Inspire 2 is a high-performance drone that is designed for
-                        professional
-                        aerial cinematography. <br> It features a 5.2K camera with interchangeable lenses and advanced
-                        flight modes for maximum creative control.</p>
-                </li>
-            </ul>
-        </section>
-        <hr>
-        <section id="services">
-            <h2>Our services</h2>
-            <p><strong>We offer a range of drone-related services to meet your needs</strong></p>
-            <table border="2" style="border-collapse: collapse;">
-                <thead>
-                    <tr>
-                        <th colspan="2">Services</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Drone Sales</th>
-                        <td>We offer a wide range of high-quality drones for sale, </br> from beginner models to
-                            advanced options with advanced features <br> like obstacle avoidance and GPS navigation.
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Drone Rentals</th>
-                        <td>If you're not ready to commit to buying a drone, we also offer drone rentals. <br> Our
-                            rental program is perfect for special events,<br>film productions or anyone looking to try
-                            out a drone before making a purchase</td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Drone Repair
-                        </th>
-                        <td>
-                            Accidents happen, and if your drone is in need of repair, our team of experts is here to
-                            help.<br>We offer repair services for a variety of issues, from broken propellers to damaged
-                            cameras.
-                        </td>
-                    <tr>
-                        <th>
-                            Drone Training
-                        </th>
-                        <td>
-                            If you're new to drones or want to improve your flying skills, we offer drone training
-                            programs. <br> Our certified trainers will help you master the basics and teach you advanced
-                            <br> techniques to take your flying to the next level.
-                        </td>
-                    </tr>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <hr>
-        <section id="about">
-            <h2>About Drone World</h2>
-            <p>At Drone World, we're passionate about helping our customers explore the skies with high-quality RC
-                drones. Our mission is to provide top-notch products and services that meet the needs of drone
-                enthusiasts and professionals alike. With a focus on innovation and customer satisfaction, we're
-                committed to delivering the best possible experience for our customers. Our team of experts has years of
-                experience in the drone industry and is dedicated to providing unparalleled support and expertise to
-                ensure that our customers get the most out of their drones. Whether you're a beginner or an experienced
-                pilot, we're here to help you take your drone flying to the next level</p>
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/KCONWLnm7FQ"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </section>
-        <hr>
-        <section id="contact">
-            <h2>Ready to take to the skies?</h2>
-            <p> <strong>Explore our website to learn more about our services and products, or contact us to speak with
-                    one of our experts.</strong></p>
-            <form action="https://formspree.io/f/meqwndqy" method="POST">
-                <fieldset>
-                    <legend><mark>Ask any question?</mark></legend>
-                    <label for="fullname">Full name:</label>
-                    <input type="text" id="fname" name="fname" placeholder="Patrcik Bateman" required
-                        autocomplete="off"><br><br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="abc123@gmail.com" required
-                        autocomplete="off"><br><br>
-                    <label for="tel">Phone number:</label>
-                    <input type="tel" id="tel" name="tel" placeholder="+915252525252" required maxlength="10"
-                        autocomplete="off"><br><br>
-                    <label for="browser">Drone Models:</label>
-                    <input list="browsers" name="browser" id="browser" placeholder="Interested Drone" required>
-                    <datalist id="browsers">
-                        <option value="Phantom 4 Pro">
-                        <option value="Mavic Air2">
-                        <option value="Spark">
-                        <option value="Inspire 2">
-                    </datalist>
-                    <br><br>
-                    <label for="comment">Other Queries:</label><br>
-                    <textarea name="comment" id="comment" cols="50" rows="3"
-                        placeholder="Share your query here..."></textarea><br><br>
-                    <label for="DateTime">Query Date & Time:</label>
-                    <input type="datetime-local" name="DateTime" required> <br><br>
-                    <input type="reset" value="Reset">
-                    <input type="submit" value="Contact Us">
-                </fieldset>
-            </form>
-        </section>
-    </main>
-    <hr>
-    <footer id="contactus">
-        <h3>Contact with us:</h3>
-        <a href="https://www.facebook.com/profile.php?id=100084888861255"><img src="./SocialMedia/facebook.png"
-                alt="facebook"></a>
-        <a href="https://www.instagram.com/apurba2099/"><img src="./SocialMedia/instagram.png" alt="instagram"></a>
-        <a href="https://www.linkedin.com/in/apurba-dutta-079230240"><img src="./SocialMedia/linkedin.png"
-                alt="linkedin"></a>
-        <a href="https://github.com/apurba2099"><img src="./SocialMedia/github.png" alt="github"></a>
-        <p> Copyright&#169; 2023 All right reserved| This is made by Apurba Dutta| CrazzyCoder Community ❤️|E-mail: <a
-                href="mailto:apurbadutta2099@gmail.com">apurbadutta2099@gmail.com </a> Phone number:<a
-                href="tel:6295324395">6295324395</a></p>
-    </footer>
-</body>
+            <strong>Price: </strong>&#8377;10,000 &emsp; &nbsp;
+            <button>
+              <a
+                href="https://www.amazon.com/DJI-Professional-Quadcopter-Multirotor-CP-PT-000488/dp/B01MXLLDQ8?th=1"
+                >Buy Now</a
+              >
+            </button>
+            <p>
+              <strong>Description: </strong>The Phantom 4 Pro is a
+              professional-grade drone that is perfect for capturing stunning
+              aerial footage. <br />
+              It features a 4K camera with a 3-axis gimbal for stable, smooth
+              video, and advanced obstacle avoidance technology <br />
+              to help keep your drone safe.
+            </p>
+          </li>
+          <li>
+            <mark><strong>Mavic Air 2</strong></mark> <br />
+            <img
+              src="./Products/mavic.jpg"
+              alt="product"
+              width="200"
+              style="border: 2px solid black" />
+            <br />
+            <strong>Price: </strong>&#8377;15,000 &emsp; &nbsp;
+            <button>
+              <a
+                href="https://www.amazon.com/DJI-Mavic-Air-Quadcopter-ActiveTrack/dp/B086X7QKHD?th=1"
+                >Buy Now</a
+              >
+            </button>
+            <p>
+              <strong>Description: </strong>The Mavic Air 2 is a compact,
+              powerful drone that is great for both novice and experienced
+              pilots. <br />
+              It features a 48-megapixel camera and can fly for up to 34 minutes
+              on a single charge.
+            </p>
+          </li>
+          <li>
+            <mark> <strong>Spark</strong> </mark> <br />
+            <img
+              src="./Products/spark.jpg"
+              alt="product"
+              width="200"
+              style="border: 2px solid black" />
+            <br />
+            <strong>Price: </strong>&#8377;25,000 &emsp; &nbsp;
+            <button>
+              <a
+                href="https://www.amazon.com/DJI-Spark-Portable-Drone-Alpine/dp/B07173X82D?th=1"
+                >Buy Now</a
+              >
+            </button>
+            <p>
+              <strong> Description:</strong>The Spark is a small but mighty
+              drone that is perfect for beginners. <br />
+              It features a 1080p camera and can be controlled using hand
+              gestures, making it a fun and easy-to-use option for pilots of all
+              skill levels.
+            </p>
+          </li>
+          <li>
+            <mark> <strong>Inspire 2</strong> </mark> <br />
+            <img
+              src="./Products/inspire.jpg"
+              alt="product"
+              width="200"
+              style="border: 2px solid black" />
+            <br />
+            <strong>Price:</strong> &#8377;50,000 &emsp; &nbsp;
+            <button>
+              <a
+                href="https://www.amazon.com/DJI-CP-BX-000166-Inspire-2-Drone/dp/B01MY2YDW9"
+                >Buy Now</a
+              >
+            </button>
+            <p>
+              <strong>Description:</strong>The Inspire 2 is a high-performance
+              drone that is designed for professional aerial cinematography.
+              <br />
+              It features a 5.2K camera with interchangeable lenses and advanced
+              flight modes for maximum creative control.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section id="services">
+        <h2>Our services</h2>
+        <p>
+          <strong
+            >We offer a range of drone-related services to meet your
+            needs</strong
+          >
+        </p>
+        <table border="2" style="border-collapse: collapse">
+          <thead>
+            <tr>
+              <th colspan="2">Services</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Drone Sales</th>
+              <td>
+                We offer a wide range of high-quality drones for sale, <br />
+                from beginner models to advanced options with advanced features
+                <br />
+                like obstacle avoidance and GPS navigation.
+              </td>
+            </tr>
+            <tr>
+              <th>Drone Rentals</th>
+              <td>
+                If you're not ready to commit to buying a drone, we also offer
+                drone rentals. <br />
+                Our rental program is perfect for special events,<br />film
+                productions or anyone looking to try out a drone before making a
+                purchase
+              </td>
+            </tr>
+            <tr>
+              <th>Drone Repair</th>
+              <td>
+                Accidents happen, and if your drone is in need of repair, our
+                team of experts is here to help.<br />We offer repair services
+                for a variety of issues, from broken propellers to damaged
+                cameras.
+              </td>
+            </tr>
 
+            <tr>
+              <th>Drone Training</th>
+              <td>
+                If you're new to drones or want to improve your flying skills,
+                we offer drone training programs. <br />
+                Our certified trainers will help you master the basics and teach
+                you advanced <br />
+                techniques to take your flying to the next level.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr />
+      <section id="about">
+        <h2>About Drone World</h2>
+        <p>
+          At Drone World, we're passionate about helping our customers explore
+          the skies with high-quality RC drones. Our mission is to provide
+          top-notch products and services that meet the needs of drone
+          enthusiasts and professionals alike. With a focus on innovation and
+          customer satisfaction, we're committed to delivering the best possible
+          experience for our customers. Our team of experts has years of
+          experience in the drone industry and is dedicated to providing
+          unparalleled support and expertise to ensure that our customers get
+          the most out of their drones. Whether you're a beginner or an
+          experienced pilot, we're here to help you take your drone flying to
+          the next level
+        </p>
+        <iframe
+          width="100%"
+          height="400"
+          src="https://www.youtube.com/embed/KCONWLnm7FQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </section>
+      <hr />
+      <section id="contact">
+        <h2>Ready to take to the skies?</h2>
+        <p>
+          <strong
+            >Explore our website to learn more about our services and products,
+            or contact us to speak with one of our experts.</strong
+          >
+        </p>
+        <form action="https://formspree.io/f/meqwndqy" method="POST">
+          <fieldset>
+            <legend><mark>Ask any question?</mark></legend>
+            <label for="fullname">Full name:</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Patrcik Bateman"
+              required
+              autocomplete="off" /><br /><br />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="abc123@gmail.com"
+              required
+              autocomplete="off" /><br /><br />
+            <label for="tel">Phone number:</label>
+            <input
+              type="tel"
+              id="tel"
+              name="tel"
+              placeholder="+915252525252"
+              required
+              maxlength="10"
+              autocomplete="off" /><br /><br />
+            <label for="browser">Drone Models:</label>
+            <input
+              list="browsers"
+              name="browser"
+              id="browser"
+              placeholder="Interested Drone"
+              required />
+            <datalist id="browsers">
+              <option value="Phantom 4 Pro"></option>
+              <option value="Mavic Air2"></option>
+              <option value="Spark"></option>
+              <option value="Inspire 2"></option>
+            </datalist>
+
+            <br /><br />
+            <label for="comment">Other Queries:</label><br />
+            <textarea
+              name="comment"
+              id="comment"
+              cols="50"
+              rows="3"
+              placeholder="Share your query here..."></textarea
+            ><br /><br />
+            <label for="DateTime">Query Date & Time:</label>
+            <input type="datetime-local" name="DateTime" required />
+            <br /><br />
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Contact Us" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <hr />
+    <footer id="contactus">
+      <h3>Contact with us:</h3>
+      <a href="https://www.facebook.com/profile.php?id=100084888861255"
+        ><img src="./SocialMedia/facebook.png" alt="facebook"
+      /></a>
+      <a href="https://www.instagram.com/apurba2099/"
+        ><img src="./SocialMedia/instagram.png" alt="instagram"
+      /></a>
+      <a href="https://www.linkedin.com/in/apurba-dutta-079230240"
+        ><img src="./SocialMedia/linkedin.png" alt="linkedin"
+      /></a>
+      <a href="https://github.com/apurba2099"
+        ><img src="./SocialMedia/github.png" alt="github"
+      /></a>
+      <p>
+        Copyright&#169; 2023 All right reserved| This is made by Apurba Dutta|
+        CrazzyCoder Community ❤️|E-mail:
+        <a href="mailto:apurbadutta2099@gmail.com"
+          >apurbadutta2099@gmail.com
+        </a>
+        Phone number:<a href="tel:6295324395">6295324395</a>
+      </p>
+    </footer>
+  </body>
 </html>
